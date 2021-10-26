@@ -6,7 +6,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
 fetchData().then(parseData).then(getLabelsAndData).then(({years, tempsGlob, tempsNHem, tempsSHem}) => drawtChart(years, tempsGlob,tempsNHem,tempsSHem));
 
 async function fetchData() {
-  return await fetch('./data/ZonAnn.Ts+dSST.csv').then(response => response.text());
+  return await fetch('./data/zon_ann.csv').then(response => response.text());
    
 }
 
